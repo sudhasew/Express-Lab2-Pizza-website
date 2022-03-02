@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Hubballi&family=Indie+Flower&display=swap");
+body {
+  padding: 10px;
+  font-family: "Indie Flower", cursive;
+}
+
+.homePage-container {
+  border: 2px solid black;
+  width: 400px;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: 900;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.links,
+.buildOwnPizza,
+.review {
+  font-size: 1.5rem;
+}
+
+li a {
+  color: blue;
+  font-size: 1.2rem;
+}
+
+ul {
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+.pizzaImage {
+  width: 200px;
+  background: none;
+}
+
+.pizza {
+  margin-top: 20px;
+}
+
+.reviewPage {
+  border: 1px solid black;
+  padding: 10px;
+  width: 430px;
+}
+
+label {
+  font-size: 1.3rem;
+  font-family: "Architects Daughter", cursive;
+  margin-top: 10px;
+}
+
+.displayReview {
+  border: 1px solid black;
+  width: 450px;
+  padding: 10px;
+}
+
+.pizzaDetails {
+  font-family: "Architects Daughter", cursive;
+  border: 1px solid black;
+  width: 550px;
+  padding: 10px;
+}
+
+.backToHome {
+  font-family: "Hubballi", cursive;
+  font-size: 1.4rem;
+  color: blue;
+}
+
+.backHome {
+  margin-top: 10px;
+}
+
+td {
+  font-family: "Hubballi", cursive;
+  font-size: 1rem;
+}
+
+.pizzaName {
+  font-family: "Architects Daughter", cursive;
+}
+
+.neverMind {
+  color: blue;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.submitNever {
+  margin-top: 10px;
+}
+
+.yourName,
+.yourComment {
+  font-family: "Architects Daughter", cursive;
+  font-size: 1rem;
+}
+
+.toppingsList {
+  font-family: "Hubballi", cursive;
+  font-size: 1.2rem;
+}

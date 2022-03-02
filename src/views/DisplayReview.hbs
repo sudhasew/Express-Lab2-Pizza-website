@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Display Review</title>
+  </head>
+  <body>
+    <div class="displayReview">
+      <h1>Thanks for the review!</h1>
+      <table>
+        <thead>
+          <tr>
+            <td>Your Name:</td>
+            <td class="yourName">{{name}}</td>
+          </tr>
+          <tr>
+            <td>Comment:</td>
+            <td class="yourComment">{{comment}}</td>
+          </tr>
+          <tr>
+            <td>Rating:</td>
+            <td>{{rating}}</td>
+          </tr>
+        </thead>
+      </table>
+      <div class="backHome">
+        <a class="backToHome" href="/back-to-homepage">Back to Homepage</a>
+      </div>
+    </div>
+  </body>
+</html>

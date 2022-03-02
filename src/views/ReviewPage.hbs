@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Review Page</title>
+  </head>
+  <body>
+    <div class="reviewPage">
+      <h1>Leave a Review</h1>
+      <form method="POST" action="/submit">
+        <label>Your Name:</label>
+        <input type="text" name="name" />
+        <br />
+        <label>Comment:</label>
+        <br />
+        <textarea name="comment" id="review" cols="50" rows="5"></textarea>
+        <br />
+        <label>Rating:</label>
+        <br />
+        <input type="radio" name="rating" value="5" />
+        5 (best) -
+        <input type="radio" name="rating" value="4" />
+        4 -
+        <input type="radio" name="rating" value="3" />
+        3 -
+        <input type="radio" name="rating" value="2" />
+        2 -
+        <input type="radio" name="rating" value="1" />
+        1 (worst)
+        <br />
+        <div class="submitNever">
+          <input type="submit" value="submit" />
+          <a class="neverMind" href="neverMind">Never Mind</a>
+        </div>
+      </form>
+      {{! <button><a href="/submit-form">Submit</a></button> }}
+
+    </div>
+  </body>
+</html>
