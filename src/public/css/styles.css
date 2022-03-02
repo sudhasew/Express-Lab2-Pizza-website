@@ -75,6 +75,7 @@ label {
   font-family: "Hubballi", cursive;
   font-size: 1.4rem;
   color: blue;
+  margin-left: 10px;
 }
 
 .backHome {
@@ -109,4 +110,45 @@ td {
 .toppingsList {
   font-family: "Hubballi", cursive;
   font-size: 1.2rem;
+}
+
+.displayPizzaOrder {
+  border: 1px solid black;
+  width: 550px;
+  padding: 10px;
+}
+.DisplayPizzaOrderTable {
+  font-size: 1.2rem;
+}
+
+.para {
+  color: crimson;
+  font-family: "Hubballi", cursive;
+  font-size: 1.5rem;
+}
+
+.buildAnotherPizza {
+  font-family: "Hubballi", cursive;
+  font-size: 1.4rem;
+  margin-right: 10px;
+  color: blue;
+}
+
+.dispalyOrder {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.dispalyPizzaOrder {
+  font-size: 1.2rem;
+}
+
+.asciipipe {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.buildPizzaAscii {
+  display: flex;
+  align-items: center;
 }

@@ -7,30 +7,35 @@
     <title>Display Pizza Order</title>
   </head>
   <body>
-    <h1>Your Pizza</h1>
-    <table>
-      <thead>
-        <tr>
-          <td>Size:</td>
-          <td>{{size}}</td>
-        </tr>
-        <tr>
-          <td>Toppings:</td>
-          <td>{{toppings}}</td>
-        </tr>
-        <tr>
-          <td>Gluten-Free Crust:</td>
-          <td>{{glutenFree}}</td>
-        </tr>
-        <tr>
-          <td>Price:</td>
-          <td>{{price}}</td>
-        </tr>
-      </thead>
-    </table>
-    <a href="BuildAnotherPizza">Build another pizza</a>
-    <div class="backHome">
-      <a class="backToHome" href="/back-to-homepage">Back to Homepage</a>
+    <div class="displayPizzaOrder">
+      <h1>Your Pizza</h1>
+      <table class="DisplayPizzaOrderTable">
+        <thead>
+          <tr>
+            <td class="dispalyOrder">Size:</td>
+            <td class="dispalyPizzaOrder">{{size}}</td>
+          </tr>
+          <tr>
+            <td class="dispalyOrder">Toppings:</td>
+            <td class="dispalyPizzaOrder">{{toppings}}</td>
+          </tr>
+          <tr>
+            <td class="dispalyOrder">Gluten-Free Crust:</td>
+            <td class="dispalyPizzaOrder">{{glutenFree}}</td>
+          </tr>
+          <tr>
+            <td class="dispalyOrder">Price:</td>
+            <td class="dispalyPizzaOrder">${{price}}</td>
+          </tr>
+        </thead>
+      </table>
+      <p class="para">{{displayMsg}}</p>
+      <div class="buildPizzaAscii">
+        <a class="buildAnotherPizza" href="BuildAnotherPizza">Build another
+          pizza</a>
+        <p class="asciipipe">&#124;</p>
+        <a class="backToHome" href="/back-to-homepage">Back to Homepage</a>
+      </div>
     </div>
   </body>
 </html>

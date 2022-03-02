@@ -49,11 +49,33 @@ app.get("/build-your-own", (req, res) => {
 });
 
 app.post("/calculatePrize", (req, res) => {
-  console.log("after click calculate price :", req.body.size);
-  const size = req.body.size;
-  const toppings = req.body.toppings;
+  var size = req.body.size;
+  var toppings = req.body.toppings;
   var glutenFree = req.body.GlutenFree ? true : false;
-  res.render("DisplayPizzaOrder", { size, toppings, glutenFree });
+  var price = req.body.price;
+  if (size === "small") {
+    price = 7 + toppings * 0.5;
+  } else if (size === "medium") {
+    price = +(10 + toppings * 1);
+  } else if (size === "large") {
+    price = +(12 + toppings * 1.25);
+  }
+
+  if (glutenFree) {
+    price = price + 2;
+  }
+  var displayMsg = "";
+  if (price >= 15) {
+    displayMsg =
+      "Because your order is meets the $15.00 minimum, you get FREE DELIVERY!";
+  }
+  res.render("DisplayPizzaOrder", {
+    size,
+    toppings,
+    glutenFree,
+    price,
+    displayMsg,
+  });
 });
 
 app.get("/BuildAnotherPizza", (req, res) => {
