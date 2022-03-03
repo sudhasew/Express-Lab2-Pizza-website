@@ -9,27 +9,26 @@
   <body>
     <div class="displayPizzaOrderContainer">
       <h1>Your Pizza</h1>
-      <table class="DisplayPizzaOrderTable">
-        <thead>
-          <tr>
-            <td class="dispalyOrder">Size:</td>
-            <td class="dispalyPizzaOrder">{{size}}</td>
-          </tr>
-          <tr>
-            <td class="dispalyOrder">Toppings:</td>
-            <td class="dispalyPizzaOrder">{{toppings}}</td>
-          </tr>
-          <tr>
-            <td class="dispalyOrder">Gluten-Free Crust:</td>
-            <td class="dispalyPizzaOrder">{{glutenFree}}</td>
-          </tr>
-          <tr>
-            <td class="dispalyOrder">Price:</td>
-            <td class="dispalyPizzaOrder">${{price}}</td>
-          </tr>
-        </thead>
-      </table>
-      <p class="para">{{displayMsg}}</p>
+      <div class="displayPizzaOrderDetails">
+        <h3>Size:
+          <span
+            style="font-size: 1.4rem; font-family: Architects Daughter, cursive;font-weight:lighter"
+          > {{size}}</span></h3>
+        <h3>Topping:<span
+            style="font-size: 1.4rem;font-family: Architects Daughter, cursive;font-weight:lighter"
+          > {{toppings}}</span></h3>
+        <h3>Gluten-Free Crust:<span
+            style="font-size: 1.4rem;font-family: Architects Daughter, cursive;font-weight:lighter"
+          >
+            {{glutenFree}}</span></h3>
+        <h3>Special Instructions:<span
+            style="font-size: 1.4rem;font-family: Architects Daughter, cursive;font-weight:lighter"
+          >
+            {{displayTextarea}}</span>
+        </h3>
+        <h3>Price:<span style="font-size: 1.4rem; "> ${{price}}</span></h3>
+      </div>
+      <p class="para"> {{displayMsg}}</p>
       <div class="buildPizzaAscii">
         <a class="buildAnotherPizza" href="BuildAnotherPizza">Build another
           pizza</a>

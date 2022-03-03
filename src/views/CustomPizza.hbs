@@ -7,35 +7,69 @@
     <title>Custom Pizza</title>
   </head>
   <body>
-      <div class="customPizzaContainer">
-    <h1>Build Your Own Pizza</h1>
-    <form method="POST" action="/calculatePrize">
-      <Select name="size">
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
-      </Select>
-      <br />
-      <label>How many toppings?</label>
-      <input type="number" value="number" name="toppings" />
-      <ul class="toppingsList">
-        <li>Pepperoni</li>
-        <li>Sausage</li>
-        <li>Chicken</li>
-        <li>Mushroom</li>
-        <li>Olive</li>
-        <li>Green Pepper</li>
-        <li>Onion</li>
-        <li>Banana Pepper</li>
-        <li>Anchovies</li>
-        <li>Pineapple</li>
-      </ul>
-      <br />
-      <input type="checkbox" value="checked" name="GlutenFree" />
-      <label>Gluten-Free Crust? ($2.00 extra)</label>
-      <br />
-      <input type="submit" value="Calculate Price" name="price" />
-      <a class="neverMind" href="neverMind">Never Mind</a>
-    </form>
+    <div class="customPizzaContainer">
+      <h1>Build Your Own Pizza</h1>
+
+      <form style="margin-bottom: 0;" method="POST" action="/calculatePrize">
+        <Select style="margin: 10px 0; font-size:1.2rem" name="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </Select>
+        <br />
+
+        <label style="font-size:1.4rem; font-weight:900">Choose your toppings</label>
+        <div style="font-size: 1.3rem;" class="toppingsList">
+          <input type="checkbox" name="toppings" value="Pepperoni" />
+          <label>Pepperoni</label>
+          <input type="checkbox" name="toppings" value="Sausage" />
+          <label>Sausage</label>
+          <input type="checkbox" name="toppings" value="Chicken" />
+          <label>Chicken</label>
+          <input type="checkbox" name="toppings" value="Mushroom" />
+          <label>Mushroom</label>
+          <input type="checkbox" name="toppings" value="Olive" />
+          <label>Olive</label>
+          <input type="checkbox" name="toppings" value="GreenPepper" />
+          <label>Green Pepper</label>
+          <input type="checkbox" name="toppings" value="Onion" />
+          <label>Onion</label>
+          <input type="checkbox" name="toppings" value="BananaPepper" />
+          <label>Banana Pepper</label>
+          <input type="checkbox" name="toppings" value="Anchovies" />
+          <label>Anchovies</label>
+          <input type="checkbox" name="toppings" value="Pineapple" />
+          <label>Pineapple</label>
+        </div>
+        <br />
+
+        <div style="margin:10px 0">
+          <input
+            style="height:20px; width:20px; margin-left:0"
+            type="checkbox"
+            value="checked"
+            name="GlutenFree"
+          />
+          <label>Gluten-Free Crust? ($2.00 extra)</label>
+          <br />
+        </div>
+
+        <div style="margin: 10px 0;">
+          <label>Special Instructions (Optional)</label>
+          <br />
+          <textarea name="specialPizza" id="specialPizza" cols="60" rows="5">
+          </textarea>
+          <br />
+        </div>
+
+        <input
+          style="font-size: 1rem;"
+          type="submit"
+          value="Calculate Price"
+          name="price"
+        />
+        <a class="neverMind" href="neverMind">Never Mind</a>
+      </form>
+    </div>
   </body>
 </html>

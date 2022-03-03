@@ -9,33 +9,48 @@
   <body>
     <div class="reviewPage">
       <h1>Leave a Review</h1>
-      <form method="POST" action="/submit">
-        <label>Your Name:</label>
-        <input type="text" name="name" />
-        <br />
-        <label>Comment:</label>
-        <br />
-        <textarea name="comment" id="review" cols="50" rows="5"></textarea>
-        <br />
-        <label>Rating:</label>
-        <br />
-        <input type="radio" name="rating" value="5" />
-        5 (best) -
-        <input type="radio" name="rating" value="4" />
-        4 -
-        <input type="radio" name="rating" value="3" />
-        3 -
-        <input type="radio" name="rating" value="2" />
-        2 -
-        <input type="radio" name="rating" value="1" />
-        1 (worst)
-        <br />
-        <div class="submitNever">
-          <input type="submit" value="submit" />
-          <a class="neverMind" href="neverMind">Never Mind</a>
-        </div>
-      </form>
-      {{! <button><a href="/submit-form">Submit</a></button> }}
+      <div class="form-container">
+        <form method="POST" action="/submit">
+          <div style="margin: 15px 0;">
+            <label>Your Name:</label>
+            <input
+              style="width: 300px; padding:10px;"
+              type="text"
+              name="name"
+            />
+            <br />
+          </div>
+          <div style="margin: 15px 0;">
+            <label>Comment:</label>
+            <br />
+            <textarea name="comment" id="review" cols="50" rows="5"></textarea>
+            <br />
+          </div>
+          <div style="margin: 15px 0;">
+            <label>Rating:</label>
+            <br />
+            <input type="radio" name="rating" value="5" />
+            5 (best) -
+            <input type="radio" name="rating" value="4" />
+            4 -
+            <input type="radio" name="rating" value="3" />
+            3 -
+            <input type="radio" name="rating" value="2" />
+            2 -
+            <input type="radio" name="rating" value="1" />
+            1 (worst)
+            <br />
+          </div>
+          <div class="submitNever">
+            <input
+              style="padding: 5px 8px; font-size:1rem;"
+              type="submit"
+              value="submit"
+            />
+            <a class="neverMind" href="neverMind">Never Mind</a>
+          </div>
+        </form>
+      </div>
 
     </div>
   </body>

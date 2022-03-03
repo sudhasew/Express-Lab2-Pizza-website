@@ -5,37 +5,54 @@
 body {
   padding: 10px;
   font-family: "Indie Flower", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .homePage-container {
   border: 2px solid black;
-  width: 400px;
+  width: 470px;
   padding: 10px;
 }
 
 h1 {
   font-weight: 900;
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  color: chocolate;
+  background-color: rgb(219, 217, 217);
+  text-align: center;
 }
 
-.links,
+.links {
+  font-size: 1.5rem;
+  color: blue;
+}
+
 .buildOwnPizza,
 .review {
-  font-size: 1.5rem;
+  font-family: "Hubballi", cursive;
+  font-size: 1.7rem;
 }
 
 li a {
   color: blue;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.toppingsList li {
+  padding: 5px 0;
 }
 
 ul {
   margin: 0;
+  padding-left: 12px;
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .pizzaImage {
@@ -72,9 +89,22 @@ label {
   padding: 10px;
 }
 
+.detailedPizza {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.pizzaDetailsTable {
+  padding: 10px 0;
+}
+
+.backToHome.backToHomePage {
+  margin-left: 0;
+}
+
 .backToHome {
   font-family: "Hubballi", cursive;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: blue;
   margin-left: 10px;
 }
@@ -85,27 +115,45 @@ label {
 
 td {
   font-family: "Hubballi", cursive;
-  font-size: 1rem;
 }
 
 .pizzaName {
   font-family: "Architects Daughter", cursive;
 }
 
+.pizzaPrice,
+.pizzaName {
+  padding: 10px;
+  font-size: 1.4rem;
+}
+
 .neverMind {
   color: blue;
   margin-left: 10px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .submitNever {
   margin-top: 10px;
 }
 
+.yourNameHere,
+.yourCommentHere,
+.yourRatingHere {
+  font-size: 1.6rem;
+  font-weight: 900;
+  padding: 10px 0;
+}
+
 .yourName,
 .yourComment {
   font-family: "Architects Daughter", cursive;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.yourRating {
+  font-size: 1.4rem;
+  font-family: "Hubballi", cursive;
 }
 
 .toppingsList {
@@ -118,6 +166,11 @@ td {
   width: 550px;
   padding: 10px;
 }
+
+.reviewPageDetails {
+  padding: 10px 0;
+}
+
 .DisplayPizzaOrderTable {
   font-size: 1.2rem;
 }
@@ -138,16 +191,23 @@ td {
 .dispalyOrder {
   font-size: 1.3rem;
   font-weight: 900;
+  margin: 10px 0;
 }
 
-.displayPizzaOrder {
+.displayPizzaOrderDetails {
   font-size: 1.2rem;
+  font-family: "Hubballi", cursive;
 }
+
 .displayPizzaOrderContainer {
   border: 2px solid black;
   width: 550px;
   padding: 10px;
 }
+
+/* span {
+  font-family: "Architects Daughter", cursive;
+} */
 
 .asciipipe {
   font-family: sans-serif;
