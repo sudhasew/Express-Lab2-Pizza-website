@@ -51,14 +51,16 @@ app.post("/calculatePrize", (req, res) => {
   var size = req.body.size;
   var toppings = req.body.toppings;
   var glutenFree = req.body.GlutenFree ? true : false;
-  var price = req.body.price;
+  var price: number = 0;
+  console.log("price here is on 55", price);
   var toppingsSize = toppings.length;
+
   if (size === "small") {
-    price = 7.0 + toppingsSize * 0.5;
+    price = +(7 + toppingsSize * 0.5);
   } else if (size === "medium") {
-    price = 10.0 + toppingsSize * 1.0;
+    price = +(10 + toppingsSize * 1.0);
   } else if (size === "large") {
-    price = 12.0 + toppingsSize * 1.25;
+    price = +(12 + toppingsSize * 1.25);
   }
 
   if (glutenFree) {
@@ -67,7 +69,7 @@ app.post("/calculatePrize", (req, res) => {
 
   var displayTextarea = req.body.specialPizza;
   var displayMsg = "";
-  if (price >= 15) {
+  if (price >= 15.0) {
     displayMsg =
       "Because your order is meets the $15.00 minimum, you get FREE DELIVERY!";
   }
